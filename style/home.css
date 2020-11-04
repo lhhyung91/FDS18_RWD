@@ -60,8 +60,6 @@
     border: 1px solid currentColor;
 }
 /* 유튜브 영상 섹션 */
-
-
 .ediya-youtube-wrapper {
     margin: 0;
 }
@@ -131,13 +129,7 @@
 }
 
 /* 이디야 뉴스 섹션 */
-.ediya-section-container{
-    background: var(--theme-bright2);
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    padding: 85px 0;
-}
+
 .ediya-news{
     background: var(--theme-primary);
     color: var(--theme-bright);
@@ -163,18 +155,11 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 }   
-.ediya-news-date {
-
-}
 .ediya-news .icon-more {
     position: absolute;
     top: 15px;
     right: 15px;
 }
-.ediya-youtube {
-    width: 365px;
-}
-
 @media all and (max-width: 767px) {
     /* 모바일 추천 음료 */
     .ediya-recommend-container {
@@ -196,7 +181,7 @@
         display: none;
     }
     .ediya-recommend-beverage:last-child {
-        top: 15px;
+        top: 30px;
         left: 50%;
         width: 60%;
         transform: translateX(-60%);
@@ -224,15 +209,28 @@
         width: 768px;
         margin-left: auto;
         margin-right: auto;
-       }
-       .ediya-recommend-beverage:first-child {
-           width: 306px;
-           top: -135px;
-           left: -50px;
-       }
-       .ediya-recommend-beverage:last-child {
-           width: 457px;
-           top: -55px;
-           right: -160px;
     }
+    .ediya-recommend-beverage:first-child {
+        width: 306px;
+        top: -135px;
+        left: -50px;
+    }
+       .ediya-recommend-beverage:last-child {
+        width: 457px;
+        top: -55px;
+        right: -160px;
+    }
+    .ediya-section-container{
+        background: var(--theme-bright2);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        padding: 85px 0;
+    }
+    .ediya-youtube {
+        width: 365px;
+    }
+    .ediya-inform-container {
+        width: 400px;
+      }
 }
